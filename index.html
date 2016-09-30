@@ -14,7 +14,9 @@
 
             <ul>
                 <li v-for="band in bands">
-                    {{band.name}} - {{band.origin}}
+                    <h1>{{band.name}}</h1>
+                    <h2>{{band.origin}}</h2>
+                    <img :src="band.image" width=200 />
                 </li>
             </ul>
 
@@ -26,28 +28,28 @@
                 data: {
                     message: "Hello Vue.js!",
                     bands: [
-                        {name: "God Module", origin: "Orlando, Florida"},
-                        {name: "VNV Nation", origin: "London, England"},
-                        {name: "Beborn Beton", origin: "Essen, Germany"},
-                        {name: "Eisbrecher", origin: "Fürstenfeldbruck, Germany"},
-                        {name: "The Cure", origin: "Crawley, West Susses, England"},
-                        {name: "Ministry", origin: "Chicago, Illinois"},
-                        {name: "twenty one pilots", origin: "Columbus, Ohio"},
-                        {name: "Silversun Pickups", origin: "Los Angeles, California"},
-                        {name: "CHVRCHES", origin: "Glasgow, Scotland"},
-                        {name: "New Order", origin: "Manchester, England"},
-                        {name: "System Syn", origin: "Los Angeles, California"},
-                        {name: "Grendel", origin: "Netherlands"},
-                        {name: "Anders Manga", origin: "United States"},
-                        {name: "De/Vision", origin: "Germany"},
-                        {name: "Project Pitchfork", origin: "Germany"},
-                        {name: "Seabound", origin: "Germany"},
-                        {name: ":Wumpscut:", origin: "Munich, Bavaria, Germany"},
-                        {name: "Chrom", origin: "Dueren, Germany"},
-                        {name: "Combichrist", origin: "Atlanta, Georgia"},
-                        {name: "Tactical Sekt", origin: "Germany"},
-                        {name: "Icon of Coil", origin: "Fredrikstad, Norway"},
-                        {name: "Assemblage 23", origin: "Seattle, Washington"},
+                        {name: "God Module", origin: "Orlando, Florida", image: "http://media-cache-ec0.pinimg.com/736x/db/9b/98/db9b98248fc1e0eac2b1d699013b2123.jpg"},
+                        {name: "VNV Nation", origin: "London, England", image: "http://www.vanyaland.com/wp-content/uploads/2014/07/VNV_Nation_720P1.jpg"},
+                        {name: "Beborn Beton", origin: "Essen, Germany", image: "https://tse2.mm.bing.net/th?id=OIP.M9ce4ce4914553536e11a9aca35cbf130o0&pid=15.1"},
+                        {name: "Eisbrecher", origin: "Fürstenfeldbruck, Germany", image: "https://tse1.mm.bing.net/th?id=OIP.M2414596486751f5ae3a4ea36d3332c17o0&pid=15.1"},
+                        {name: "The Cure", origin: "Crawley, West Susses, England", image: "http://www.indiemeute.de/wp-content/uploads/2015/11/The-Cure-Konzerte-2016-934x516.jpg"},
+                        {name: "Ministry", origin: "Chicago, Illinois", image: "http://media.musicfeeds.com.au/files/893374836aa579dcfd493559bee9ba1a.jpg"},
+                        {name: "twenty one pilots", origin: "Columbus, Ohio", image: "http://beardedgentlemenmusic.com/wp-content/uploads/2015/09/Twenty-One-Pilots-are-Dating-Each-Other.jpg"},
+                        {name: "Silversun Pickups", origin: "Los Angeles, California", image: "http://www.atlantamusicguide.com/wp-content/uploads/Silversun-Pickups.jpg"},
+                        {name: "CHVRCHES", origin: "Glasgow, Scotland", image: "https://tse3.mm.bing.net/th?id=OIP.M46cae9477bfab2e6fe01da370978ddbco0&pid=15.1"},
+                        {name: "New Order", origin: "Manchester, England", image: "https://sonar.es/system/attached_images/4599/medium/sonar-bcn-2016-NewOrder_CreditNickWilson-2.jpg?1461920668"},
+                        {name: "System Syn", origin: "Los Angeles, California", image: "http://www.gothicparadise.com/images/system_syn.jpg"},
+                        {name: "Grendel", origin: "Netherlands", image: "http://metalship.org/archives/groupes/groupe1789.jpg"},
+                        {name: "Anders Manga", origin: "United States", image:"http://66.media.tumblr.com/909105e1e400abdb3751f45c8be4416a/tumblr_obb9dfyZvf1vz3h4h_og_1280.jpg"},
+                        {name: "De/Vision", origin: "Germany", image: "http://d2tqed3y8k290k.cloudfront.net/artists/000/013/709/heros/desktop.jpg?1392907407"},
+                        {name: "Project Pitchfork", origin: "Germany", image: "http://www.soundspheremag.com/wp-content/migration/images/stories/project_pitchfork_13_400.jpg"},
+                        {name: "Seabound", origin: "Germany", image: "http://media-cache-ec0.pinimg.com/736x/d4/d5/b9/d4d5b93e4b4c0d807b76c29fa48bd331.jpg"},
+                        {name: ":Wumpscut:", origin: "Munich, Bavaria, Germany", image: "http://www.spirit-of-metal.com/les%20goupes/W/Wumpscut/pics/2.jpg"},
+                        {name: "Chrom", origin: "Dueren, Germany", image:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Chrom_Nocturnal_Culture_Night_9_2014_01.JPG/1280px-Chrom_Nocturnal_Culture_Night_9_2014_01.JPG"},
+                        {name: "Combichrist", origin: "Atlanta, Georgia", image: "http://www.rockwallpapers.net/wallpapers/2012/0413/20120413122348228.jpg"},
+                        {name: "Tactical Sekt", origin: "Germany", image: "http://media-cache-ak0.pinimg.com/736x/83/bf/85/83bf8591aa450c49a63a3596086f0a32.jpg"},
+                        {name: "Icon of Coil", origin: "Fredrikstad, Norway", image: "http://www.superfecta.com/site2/wp-content/uploads/2014/04/iconofcoil-1024x681.jpg"},
+                        {name: "Assemblage 23", origin: "Seattle, Washington", image: "http://www.chaindlk.com/interview_archives/interview_images/Assemblage23-2/Assemblage23-2_pic.jpg"},
                     ]
                 }
             })
