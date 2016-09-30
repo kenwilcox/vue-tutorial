@@ -7,13 +7,43 @@
         <div id="app">
             <p>{{ message }}</p>
             <input type="text" v-model="message">
+
+            <ul>
+                <li v-for="band in bands">
+                    {{band.name}} - {{band.origin}}
+                </li>
+            </ul>
         </div>
 
         <script>
             new Vue({
                 el: "#app",
                 data: {
-                    message: "Hello Vue.js!"
+                    message: "Hello Vue.js!",
+                    bands: [
+                        {name: "God Module", origin: "Orlando, Florida"},
+                        {name: "VNV Nation", origin: "London, England"},
+                        {name: "Beborn Beton", origin: "Essen, Germany"},
+                        {name: "Eisbrecher", origin: "Fürstenfeldbruck, Germany"},
+                        {name: "The Cure", origin: "Crawley, West Susses, England"},
+                        {name: "Ministry", origin: "Chicago, Illinois"},
+                        {name: "twenty one pilots", origin: "Columbus, Ohio"},
+                        {name: "Silversun Pickups", origin: "Los Angeles, California"},
+                        {name: "CHVRCHES", origin: "Glasgow, Scotland"},
+                        {name: "New Order", origin: "Manchester, England"},
+                        {name: "System Syn", origin: "Los Angeles, California"},
+                        {name: "Grendel", origin: "Netherlands"},
+                        {name: "Anders Manga", origin: "United States"},
+                        {name: "De/Vision", origin: "Germany"},
+                        {name: "Project Pitchfork", origin: "Germany"},
+                        {name: "Seabound", origin: "Germany"},
+                        {name: ":Wumpscut:", origin: "Munich, Bavaria, Germany"},
+                        {name: "Chrom", origin: "Dueren, Germany"},
+                        {name: "Combichrist", origin: "Atlanta, Georgia"},
+                        {name: "Tactical Sekt", origin: "Germany"},
+                        {name: "Icon of Coil", origin: "Fredrikstad, Norway"},
+                        {name: "Assemblage 23", origin: "Seattle, Washington"},
+                    ]
                 }
             })
         </script>
